@@ -1,0 +1,7 @@
+{
+	"Description":"This is a sample AuthInfo.json file that can be used by the client to load authentication information from an external location.",
+	"CompanyId":"xxxxx-xxxx-xx-xxx-xxx",
+	"ApiKey":"xxxxxxxxxxxxx",
+	"UserName":"username",
+	"Password":"password"
+}
