@@ -6,6 +6,9 @@
 [Bb]in/
 packages/
 TestResults/
+[Aa]pp_Data/
+App_Data/AuthInfo.json
+AuthInfo.json
 
 # globs
 Makefile.in
