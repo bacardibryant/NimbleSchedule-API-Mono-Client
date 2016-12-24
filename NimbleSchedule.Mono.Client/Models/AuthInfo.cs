@@ -1,4 +1,6 @@
-﻿namespace NimbleSchedule.Mono.Models
+﻿using Newtonsoft.Json;
+
+namespace NimbleSchedule.Mono.Models
 {
 	/// <summary>
 	/// NimbleSchedule API Authentication Information class used to provide authentication information to
@@ -10,6 +12,7 @@
 	/// This public class should be instantiated and configured by the consuming assembly, this will allow for the NimbleApiClient
 	/// will perform the work of this class.
 	/// </summary>
+	[JsonObject]
 	public class AuthInfo
 	{
 		public string CompanyId { get; set; }

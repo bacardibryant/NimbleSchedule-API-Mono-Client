@@ -2,6 +2,9 @@
 
 namespace NimbleSchedule.Mono.Models
 {
+	/// <summary>
+	/// NimbleSchedule Shift Model.
+	/// </summary>
 	[JsonObject]
 	public class Shift
 	{

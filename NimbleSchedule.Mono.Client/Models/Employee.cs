@@ -2,6 +2,9 @@
 
 namespace NimbleSchedule.Mono.Models
 {
+	/// <summary>
+	/// NimbleSchedule Employee Model.
+	/// </summary>
 	[JsonObject]
 	public class Employee
 	{
