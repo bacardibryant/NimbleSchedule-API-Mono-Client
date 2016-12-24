@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using NimbleSchedule.Mono.Models;
 
-namespace NimbleSchedule.Interface
+namespace NimbleSchedule.Mono.Client
 {
-	class NimbleApiInterface
+	class NimbleApiInterface : IDisposable
 	{
 		HttpClient _client = new HttpClient();
 		AuthInfo _authInfo = new AuthInfo();
@@ -76,5 +76,9 @@ namespace NimbleSchedule.Interface
 			return employees;
 		}
 
+		public void Dispose()
+		{
+			_client.Dispose();
+		}
 	}
 }
