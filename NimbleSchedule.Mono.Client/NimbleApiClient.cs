@@ -11,7 +11,7 @@ namespace NimbleSchedule.Mono.Client
 		{
 			using (NimbleApiInterface apiInterface = new NimbleApiInterface(authInfo))
 			{
-				return apiInterface.GetShiftsAsync(startDate, endDate).Result;
+				return await apiInterface.GetShiftsAsync(startDate, endDate);
 			}
 		}
 
@@ -19,7 +19,7 @@ namespace NimbleSchedule.Mono.Client
 		{
 			using (NimbleApiInterface apiInterface = new NimbleApiInterface(authInfo))
 			{
-				return apiInterface.GetEmployeesAsync().Result;
+				return await apiInterface.GetEmployeesAsync();
 			}
 		}
 
