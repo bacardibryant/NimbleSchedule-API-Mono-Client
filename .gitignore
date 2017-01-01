@@ -9,6 +9,8 @@ TestResults/
 [Aa]pp_Data/
 App_Data/AuthInfo.json
 AuthInfo.json
+App_Data/authConfig.json
+authConfig.json
 
 # globs
 Makefile.in
