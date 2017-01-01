@@ -38,7 +38,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="App_Data\AuthInfo.json" />
+    <None Include="App_Data\authConfig.json" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NimbleSchedule.Mono.Client\NimbleSchedule.Mono.Client.csproj">

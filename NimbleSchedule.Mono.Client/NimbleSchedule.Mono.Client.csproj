@@ -63,6 +63,9 @@
     <Compile Include="Models\Shift.cs" />
     <Compile Include="NimbleApiClient.cs" />
     <Compile Include="NimbleApiInterface.cs" />
+    <Compile Include="Models\Country.cs" />
+    <Compile Include="Models\Department.cs" />
+    <Compile Include="Models\Location.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
