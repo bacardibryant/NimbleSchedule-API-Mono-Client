@@ -14,14 +14,25 @@ is somewhat different.
 ###How to use it?
 Simply reference the project or assembly in your project.
 <pre><code>
+using System;
+using System.IO;
+using System.Threading.Tasks;
 using Newtonsoft.Json;
-using NimbleSchedule.Client;
+using NimbleSchedule.Mono.Client;
+using NimbleSchedule.Mono.Models;
 </code></pre>
 
 Instantiate a authentication object with active credentials.
 <pre><code>
+private const string testProjectLocation = "path-to-project-folder";
+private const string configDataLocation = "path-to-authConfig.json-in-project";
+private const string projectFolderName = "name-of-projects-folder";
+
+// build file path to config file.
+var filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), projectFolderName);
+
 // read authentication information from configuration file.
-var authInfo = JsonConvert.DeserializeObject<AuthInfo>(File.ReadAllText("authConfig.json"));
+authInfo = JsonConvert.DeserializeObject<AuthInfo>(File.ReadAllText($"{filePath}{testProjectLocation}{configDataLocation}");
 </code></pre>
 
 Call the appropriate static method on the client object.
@@ -38,6 +49,8 @@ call below.
         public async Task&lt;ActionResult&gt; Employees()
         {
             var employees = new List<Employee>();
+            
+            // instantiate an authentication object with valid credentials.
             var authInfo = GetAuthInfo();
 
             // get employee data from api client.
