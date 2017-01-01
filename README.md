@@ -5,10 +5,9 @@ This is a C# class library that when referenced in your projects, can be used to
 and parse the results into .NET objects and collections for later use in your application.
 
 ###How is it written?
-This project is written using Visual Studio for Mac. Because the .NET native and Mono implementations of C#
+This project is written using Visual Studio for macOS. Because the .NET native and Mono implementations of C#
 differ slightly, the code between this library and our
 <a href="https://github.com/xnodeoncode/NimbleSchedule-API-Client" target="_blank">NimbleSchedule-API-Client</a>
-(written using Visual Studio Preview for Mac)
 is somewhat different.
 
 ###How to use it?
