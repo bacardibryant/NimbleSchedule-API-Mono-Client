@@ -4,13 +4,13 @@ NimbleSchedule API Client written in C# (Mono) using Visual Studio for Mac.
 This is a C# class library that when referenced in your projects, can be used to make asynchronous api calls to NimbleSchedule
 and parse the results into .NET objects and collections for later use in your application.
 
-###How is it written?
+### How is it written?
 This project is written using Visual Studio for macOS. Because the .NET native and Mono implementations of C#
 differ slightly, the code between this library and our
 <a href="https://github.com/xnodeoncode/NimbleSchedule-API-Client" target="_blank">NimbleSchedule-API-Client</a>
 is somewhat different.
 
-###How to use it?
+### How to use it?
 Simply reference the project or assembly in your project.
 <pre><code>
 using System;
@@ -40,7 +40,7 @@ Call the appropriate static method on the client object.
  var employees = await NimbleApiClient.GetEmployeesAsync(authInfo);
 </code></pre>
 
-###Asynchronous Throughout
+### Asynchronous Throughout
 The NimbleSchedule-API-Mono-Client attempts to use asynchronous code throughout, where there is support for it. Therefore
 methods that contain client calls must implement the C# async/await pattern as illustrated in the ASP.NET MVC controller
 call below.
@@ -64,5 +64,5 @@ call below.
         }
 </code></pre>
 
-##NOTE: This project is not affiliated with the company Nimble nor its product located at http://www.nimbleschedule.com.
+#### NOTE: This project is not affiliated with the company Nimble nor its product located at http://www.nimbleschedule.com.
 
